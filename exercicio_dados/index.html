@@ -9,33 +9,35 @@
 </head>
 
 <body>
-  <h2>Estatísticas</h2>
-  <p id="total"></p>
-  <p id="cartao_credito"></p>
-  <p id="boleto"></p>
-  <hr>
-  <h3>Status</h3>
-  <p id="paga"></p>
-  <p id="cartao_recusado"></p>
-  <p id="aguardando_pagamento"></p>
-  <p id="estornada"></p>
-  <p id="dia_mais_vendas"></p>
-  <hr>
-  <h2>Dados</h2>
-  <table cellspacing="0">
-    <thead>
-      <tr>
-        <th>Nome</th>
-        <th>Email</th>
-        <th>Compra</th>
-        <th>Pagamento</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
+  <header class="container">
+    <h1>Manipulação de Dados com Typescript</h1>
+  </header>
+  <div class="container">
+    <hr>
+    <h2>Estatísticas</h2>
+    <p id="total">Total: <span></span></p>
+    <div id="pagamentos"></div>
+    <hr>
+    <h3>Status</h3>
+    <div id="status"></div>
+    <p id="dia">Dia com mais vendas: <span></span></p>
+    <hr>
+    <h2>Dados</h2>
+    <table id="transacoes" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Compra</th>
+          <th>Pagamento</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
 
-    </tbody>
-  </table>
+      </tbody>
+    </table>
+  </div>
 
   <script type="module" src="./src/scripts/main.ts"></script>
 </body>
