@@ -4,6 +4,22 @@
   padding: 0;
   font-family: sans-serif;
 }
+
+.container {
+  width: min(100% - 30px, 1440px);
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
